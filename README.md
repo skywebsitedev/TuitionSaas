@@ -107,8 +107,3 @@ DevDojo got a full video series on how you can setup, build, and configure Wave,
 
 Checkout the [official Wave documentation here](https://wave.devdojo.com/docs).
 
-## Support Wave
-
-Give Wave and DevDojo support by following DevDojo on [Twitter](https://twitter.com/thedevdojo) and upvoting them on [Product Hunt](https://www.producthunt.com/posts/wave-2-0).
-
-<p align="center"><a href="https://www.producthunt.com/posts/wave-2-0" target="_blank"><img src="https://cdn.devdojo.com/images/april2021/upvote-product-hunt-img.png" height="auto" width="auto"></a></p>
