@@ -2,20 +2,8 @@
 
 ## Introduction
 
-Surf, the opinionated Software as a Service Starter Kit that can help you build your next great idea 💰. Surf is fork off [Wave](https://devdojo.com/wave), and is built with [Laravel](https://laravel.com), [Voyager](https://voyager.devdojo.com), [TailwindCSS](https://tailwindcss.com), and a few other awesome technologies. Here are some of the awesome features ✨:
+Surf, the opinionated Software as a Service Starter Kit that can help you build your next great idea 💰. Surf is fork off , and is built with [Laravel](https://laravel.com), [Voyager](https://voyager.devdojo.com), [TailwindCSS](https://tailwindcss.com), and a few other awesome technologies. Here are some of the awesome features ✨:
 
- - [Authentication](https://wave.devdojo.com/docs/features/authentication)
- - [User Profiles](https://wave.devdojo.com/docs/features/user-profiles)
- - [User Impersonation](https://wave.devdojo.com/docs/features/user-impersonation)
- - [Subscriptions](https://wave.devdojo.com/docs/features/billing)
- - [Subscription Plans](https://wave.devdojo.com/docs/features/subscription-plans)
- - [User Roles](https://wave.devdojo.com/docs/features/user-roles)
- - [Notifications](https://wave.devdojo.com/docs/features/notifications)
- - [Announcements](https://wave.devdojo.com/docs/features/announcements)
- - [Fully Functional Blog](https://wave.devdojo.com/docs/features/blog)
- - [Out of the Box API](https://wave.devdojo.com/docs/features/api)
- - [Voyager Admin](https://wave.devdojo.com/docs/features/admin)
- - [Customizable Themes](https://wave.devdojo.com/docs/features/themes)
 
 ## Deployment Issues
 
@@ -60,28 +48,7 @@ Following that, we'll need to install all composer dependencies through the foll
 composer install
 ```
 
-### 4. Update Paddle Plans
-
-To make sure your plan IDs are up-to-date, you'll need to update the [PlansTableSeeder](database/seeders/PlansTableSeeder.php).
-
-To create a Paddle plan, navigate to your Paddle account and click on Catalogue » **Subscription Plans**.
-
-<small>Use the [**sandbox-vendors.paddle.com**](https://sandbox-vendors.paddle.com) account for testing, and [**vendors.paddle.com**](https://vendors.paddle.com) account for production.</small>
-
-Update the `plan_id`, `price`, `trial_days`, etc. in the plans seeder array.
-
-```diff
-    'name' => 'Basic',
-    'slug' => 'basic',
-    'description' => 'Signup for the Basic User Plan to access all the basic features.',
--   'plan_id' => '1',
-+   'plan_id' => '12345',
-    'default' => 0,
-    'price' => '5',
-    'trial_days' => 0,
-```
-
-### 5. Run Migrations and Seeds
+### 4. Run Migrations and Seeds
 
 We must migrate our database schema into our database, which we can accomplish by running the following command:
 
@@ -96,14 +63,4 @@ php artisan db:seed
 ```
 
 That's it! You will now be able to visit your URL and see your Surf application up and running. 🎉
-
-## Watch, Learn, and Build
-
-DevDojo got a full video series on how you can setup, build, and configure Wave, which is the underlying starter kit Surf is made from. You can watch first few videos for free, and additional videos will require a [DevDojo Pro](https://devdojo.com/pro) subscription. By subscribing to a [DevDojo Pro](https://devdojo.com/pro) subscription you will also be supporting the ongoing development of this project. It's a win win! 🙌
-
-[Click here to watch the Wave Video Series](https://devdojo.com/course/wave).
-
-## Documentation
-
-Checkout the [official Wave documentation here](https://wave.devdojo.com/docs).
 
